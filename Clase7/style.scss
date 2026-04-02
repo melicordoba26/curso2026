@@ -1,0 +1,22 @@
+$primary: red;
+
+@mixin caja{
+    padding: 20px;
+    text-align: center;
+    border: 3px solid black;
+
+}
+
+button {
+  background-color: $primary;
+ 
+}
+
+div {
+    background-color: $primary;
+    @include caja;
+}
+
+body{
+background-color:red;
+}

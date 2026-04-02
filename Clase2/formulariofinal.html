@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Formulario de contacto</h1>
+<h2>Complete los datos según corresponda</h2>
+<body>
+    <form>
+        <label for="nombre">Nombre</label><br>
+        <input type="text" minlength="3" name="nombre" id="nombre"> <br><br>
+
+        <label for="apellido">Apellido</label><br>
+        <input type="text" minlength="3" name="apellido" id="apellido"> <br><br>
+
+        <label for="edad">Edad</label> <br>
+        <input type="number" min="18" max="100"name="edad" id="edad"> <br><br>
+        <label for="email">Email * </label><br>
+        <input type="email" required name="email" id="email"><br><br>
+
+        <label for="telefono">Telefono</label><br>
+        <input type="tel" name="telefono" id="telefono" maxlength="10"><br><br>
+
+        <label for="tipocliente">Tipo de cliente</label> <br>
+        <input type="radio" name="tipo" id="tipo">Afiliado<br><br>
+        <input type="radio" name="tip" id="tipo">No afiliado<br><br>
+
+
+        <label for="motivo">Motivo de contacto </label><br>
+
+        
+        <select name="motivo" id="motivo">
+            <option selected></option>
+            <option>Consulta</option>
+            <option>Trabajo</option>
+        </select> <br><br>
+        <label for="mensaje">Mensaje</label><br>
+        <textarea name="mensaje" id="mensaje"></textarea> <br><br>
+
+        <label for="checkbox">Acepto terminos y condiciones</label> <br>
+        <input type = "checkbox" name="checkbox" id="required"> <br>
+
+
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

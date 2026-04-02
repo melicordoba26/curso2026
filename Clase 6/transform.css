@@ -1,0 +1,8 @@
+button{
+    transition: transform 03.s;
+}
+button:hover{
+    transform: scale(1.1);
+    transform: rotate(45deg);
+    transform: translateY(-10px);
+}

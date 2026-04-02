@@ -1,0 +1,94 @@
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 2rem;
+    gap: 1.2rem;
+    text-align: center;
+}
+
+.hero button{
+    cursor: pointer;
+    transition: transform 0.3s;
+    background-color: rgb(214, 82, 111);
+    font-size: 1rem;
+    border-radius: 5px;
+}
+button:hover{
+    transform: scale(1.1);
+    transform: skew();
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(220, 20, 113);
+    color: wheat;
+    padding: 10px 20px;
+    align-items:flex-start;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navlinks li {
+    display: inline;
+    cursor: pointer;
+}
+
+.navlinks a {
+    color: rgb(22, 21, 19);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.cards{
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    justify-content: space-around;
+
+    div{
+        background-color: crimson;
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 5px 5px 10px black
+    }
+
+    
+    }
+    
+.card:hover {
+    transform: translateY(-15px);
+    transform: scale(1.1);
+}
+
+@media(max-width: 768px){
+    .card{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
