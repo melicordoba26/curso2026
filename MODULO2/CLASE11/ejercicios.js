@@ -23,3 +23,10 @@ console.log("Contar hacia atras del 10 al 1")
 for (let i= 10; i>=1; i--){
     console.log(i)
 }
+console.log ("********************************************")
+console.log("Sumar del 1 al 5")
+let contador = 0
+for (let i=5; i>=1;i--){
+    contador += i 
+}
+console.log(contador)
